@@ -1,4 +1,4 @@
-local default_patterns = {
+local builtin_patterns = {
   -- from lazyvim
   "PlenaryTestPopup",
   "help",
@@ -11,7 +11,7 @@ local default_patterns = {
   "tsplayground",
   "checkhealth",
 
-  -- Overseer
+  -- https://github.com/stevearc/overseer.nvim
   "OverseerList",
 }
 
@@ -22,7 +22,7 @@ function M.setup(opts)
 
   vim.api.nvim_create_autocmd("FileType", {
     group = vim.api.nvim_create_augroup("closewithq", { clear = true }),
-    pattern = vim.list_extend(default_patterns, opts.patterns or {}),
+    pattern = vim.list_extend(builtin_patterns, opts.patterns or {}),
     callback = function(event)
       vim.bo[event.buf].buflisted = false
       vim.keymap.set("n", "q", ":close<cr>", { buffer = event.buf, silent = true })
