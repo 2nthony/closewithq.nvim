@@ -21,7 +21,7 @@ function M.setup(opts)
   opts = opts or {}
 
   vim.api.nvim_create_autocmd("FileType", {
-    group = vim.api.nvim_create_augroup("closewithq", { clear = true }),
+    group = vim.api.nvim_create_augroup("qclose", { clear = true }),
     pattern = vim.list_extend(builtin_patterns, opts.patterns or {}),
     callback = function(event)
       vim.bo[event.buf].buflisted = false

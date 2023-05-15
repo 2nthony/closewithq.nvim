@@ -1,4 +1,4 @@
-# closewithq.nvim
+# qclose.nvim
 
 Just a `FileType` autocmd snippet with builtin patterns, source code from [LazyVim](https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua).
 
@@ -7,7 +7,7 @@ Just a `FileType` autocmd snippet with builtin patterns, source code from [LazyV
 ```lua
 -- lazy.nvim
 return {
-  "2nthony/closewithq.nvim",
+  "2nthony/qclose.nvim",
   event = "VeryLazy",
   opts = {
     patterns = {
