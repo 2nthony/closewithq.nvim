@@ -13,6 +13,9 @@ local builtin_patterns = {
 
   -- https://github.com/stevearc/overseer.nvim
   "OverseerList",
+
+  -- https://github.com/akinsho/toggleterm.nvim
+  "toggleterm",
 }
 
 local M = {}
