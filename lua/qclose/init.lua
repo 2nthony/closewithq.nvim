@@ -16,6 +16,9 @@ local builtin_patterns = {
 
   -- https://github.com/akinsho/toggleterm.nvim
   "toggleterm",
+
+  -- https://github.com/tpope/vim-fugitive
+  "fugitive",
 }
 
 local M = {}
